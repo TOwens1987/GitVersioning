@@ -1,9 +1,4 @@
-inputs = {
-  tool_config = [
-    {
-      name     = "appdynamics"
-      enabled  = "true"
-      revision = "1.1.4"
-    },
-  ]
-}
+appdynamics:
+revision: 1.1.1
+dynatrace:
+revision: 1.1.1
