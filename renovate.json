@@ -5,6 +5,19 @@
   ],
   "enabledManagers": ["regex"],
   "branchPrefix": "release/dev",
+  "packageRules": [
+    {
+      "matchDatasources": ["github-releases"],
+      "matchPackageNames": ["releases"],
+      "groupName": "tools",
+      "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
+    },
+    {
+      "matchDatasources": ["github-tags"],
+      "groupName": "tools-prime",
+      "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
+    }
+  ],
 
   "regexManagers": [
     {
@@ -14,6 +27,18 @@
         "revision =\\s\"(?<currentValue>.*\\d)"
       ],
       "datasourceTemplate": "github-releases",
+      "packageNameTemplate": "TOwens1987/GitVersioning",
+      "depNameTemplate": "GitVersioning Update",
+      "extractVersionTemplate": "^(?<version>.*)$",
+      "versioningTemplate": "semver"
+    },
+        {
+      "description": "Update HCL Plugins",
+      "fileMatch": [".hcl$"],
+      "matchStrings": [
+        "revision =\\s\"(?<currentValue>.*\\d)"
+      ],
+      "datasourceTemplate": "github-tags",
       "packageNameTemplate": "TOwens1987/GitVersioning",
       "depNameTemplate": "GitVersioning Update",
       "extractVersionTemplate": "^(?<version>.*)$",
