@@ -7,13 +7,13 @@
   "branchPrefix": "release/dev",
   "packageRules": [
     {
-      "matchDatasourceTemplate": ["github"],
+      "matchDatasources": ["github"],
       "matchPackageNames": ["releases"],
       "groupName": "tools",
       "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
     },
     {
-      "matchDatasourceTemplate": ["github"],
+      "matchDatasources": ["github"],
       "groupName": "tools-prime",
       "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
     }
