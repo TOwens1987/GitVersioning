@@ -24,7 +24,7 @@
       "description": "Update HCL Plugins",
       "fileMatch": [".hcl$"],
       "matchStrings": [
-        "revision =\\s\"(?<currentValue>.*\\d)"
+        "\\s*(?<nameoftool>.*):\\n\\s*revision:\\s(?<currentValue>.*).*?"
       ],
       "datasourceTemplate": "github-releases",
       "packageNameTemplate": "TOwens1987/GitVersioning",
