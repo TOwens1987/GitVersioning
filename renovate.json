@@ -27,7 +27,7 @@
         "\\s*(?<nameoftool>.*):\\n\\s*revision:\\s(?<currentValue>.*).*?"
       ],
       "datasourceTemplate": "github-releases",
-      "packageNameTemplate": "TOwens1987/GitVersioning",
+      "packageNameTemplate": "TOwens1987/testtool",
       "depNameTemplate": "GitVersioning Update",
       "extractVersionTemplate": "^(?<version>.*)$",
       "versioningTemplate": "semver"
@@ -39,8 +39,8 @@
         "\\s*(?<nameoftool>.*):\\n\\s*revision:\\s(?<currentValue>.*).*?"
       ],
       "datasourceTemplate": "github-tags",
-      "packageNameTemplate": "TOwens1987/GitVersioning",
-      "depNameTemplate": "TOwens1987/GitVersioning",
+      "packageNameTemplate": "TOwens1987/testtool",
+      "depNameTemplate": "TOwens1987/testtool",
       "extractVersionTemplate": "^(?<version>.*)$",
       "versioningTemplate": "semver"
     }
