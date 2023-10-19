@@ -10,12 +10,14 @@
       "matchDatasources": ["github"],
       "matchPackageNames": ["releases"],
       "groupName": "tools",
-      "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
+      "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
+      "separateMajorMinor": "false"
     },
     {
       "matchDatasources": ["github"],
       "groupName": "tools-prime",
-      "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)"
+      "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
+      "separateMajorMinor": "false"
     }
   ],
 
