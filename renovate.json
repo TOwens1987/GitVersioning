@@ -9,6 +9,7 @@
     {
       "matchDatasources": ["github"],
       "matchPackageNames": ["releases"],
+      "matchPaths": ["**"],
       "groupName": "tools",
       "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
       "separateMajorMinor": "false"
@@ -16,6 +17,7 @@
     {
       "matchDatasources": ["github"],
       "groupName": "tools-prime",
+      "matchPaths": ["**"],
       "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
       "separateMajorMinor": "false"
     }
