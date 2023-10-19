@@ -1,4 +1,4 @@
-appdynamics:
+testtool:
 revision: 1.1.1
-dynatrace:
+GitVersioning:
 revision: 1.1.1
