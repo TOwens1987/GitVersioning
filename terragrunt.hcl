@@ -1,4 +1,4 @@
 appdynamics:
-revision: 1.1.1
+revision: 30.30.30
 dynatrace:
-revision: 1.1.1
+revision: 30.30.30
