@@ -9,7 +9,7 @@
     {
       "matchDatasources": ["github"],
       "matchPackageNames": ["releases"],
-      "matchPaths": ["**"],
+      "matchPaths": ["**/terragrunt.hcl"],
       "groupName": "tools",
       "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
       "separateMajorMinor": "false"
@@ -17,7 +17,7 @@
     {
       "matchDatasources": ["github"],
       "groupName": "tools-prime",
-      "matchPaths": ["**"],
+      "matchPaths": ["**/terragrunt.hcl"],
       "versioning": "regex:appVersion: (?<major>\\d+)\\.(?<minor>\\d+)\\.(?<patch>\\d+)",
       "separateMajorMinor": "false"
     }
