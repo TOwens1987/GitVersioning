@@ -32,7 +32,7 @@
       ],
       "datasourceTemplate": "github-releases",
       "packageNameTemplate": "TOwens1987/{{nameoftool}}",
-      "depNameTemplate": "TOwens1987/{{nameoftool}}",
+      "depNameTemplate": "{{nameoftool}}",
       "extractVersionTemplate": "^(?<version>.*)$",
       "versioningTemplate": "semver"
     },
@@ -44,7 +44,7 @@
       ],
       "datasourceTemplate": "github-tags",
       "packageNameTemplate": "TOwens1987/{{nameoftool}}",
-      "depNameTemplate": "TOwens1987/{{nameoftool}}",
+      "depNameTemplate": "{{nameoftool}}",
       "extractVersionTemplate": "^(?<version>.*)$",
       "versioningTemplate": "semver"
     }
